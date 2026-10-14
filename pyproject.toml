@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decoyguard"
+version = "0.1.0"
+description = "Drop-in deception (honeytoken) tripwires for small businesses"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+decoyguard = "decoyguard.cli:main"
+
+[tool.setuptools]
+packages = ["decoyguard"]
